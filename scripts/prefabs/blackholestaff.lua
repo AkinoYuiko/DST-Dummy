@@ -1,13 +1,13 @@
 local assets = {
 	Asset("ANIM", "anim/blackholestaff.zip"),
-
+    
+	Asset("ANIM", "anim/floating_items.zip"),
 }
 
 local prefabs = {
 
 	blackhole = {
-		"shadow_puff_large_front",
-		"shadow_puff_large_back",
+		"shadow_puff",
 		"reticule",
 	},
 }
@@ -50,7 +50,7 @@ local function pickup(staff, target, pos)
 				--local num = v.components.stackable and v.components.stackable.stacksize or 1
 				if caster.components.inventory:CanAcceptCount(v, 40) > 0 then
 
-    	        local fx = SpawnPrefab("shadow_puff_large_front")
+    	        local fx = SpawnPrefab("shadow_puff")
 				if fx then fx.Transform:SetPosition(v.Transform:GetWorldPosition()) fx.Transform:SetScale(0.7,0.7,0.7) end
     	        local v_pos = v:GetPosition()
     	        if v.components.stackable ~= nil then
