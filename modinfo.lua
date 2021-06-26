@@ -1,10 +1,11 @@
-version = "1.10.2"
+version = "1.10.3"
 -- basic info --
 name = locale == "zh" and "梦魇少女 达米" or "Dummy"
 author = locale == "zh" and "丁香女子学校" or "Civi, 中华田园人, Tony, kengyou_lei, LSSSS"
 description = locale == "zh" and "[版本: "..version..[[]
 
-更新内容: 修复立绘显示问题.
+更新内容: 
+- 修复 InitCharacterAssets 的问题
 
 < 饥饿/精神/生命: 150/200/150 >
 < 攻击倍率: 75% >
@@ -18,7 +19,8 @@ description = locale == "zh" and "[版本: "..version..[[]
 or
 "[Version: "..version..[[]
 
-Changelog: Fixed bigportraits display issue.
+Changelog: 
+- Fixed an issue with InitCharacterAssets.
 
 < Hunger/Sanity/Health: 150/200/150 >
 < Damage: 75% >
