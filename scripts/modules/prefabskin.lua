@@ -45,9 +45,9 @@ GlassicAPI.SkinHandler.AddModSkins({
         "dummy_none"
     },
     greenamulet = {
-        { name = "greenamulet_heart", test_fn = function(player) return GlassicAPI.SetExclusiveToPlayer(player, "dummy") end }
+        { name = "greenamulet_heart", test_fn = GlassicAPI.SetExclusiveToPlayer("dummy") }
     },
     raincoat = { 
-        {name = "raincoat_peggy", test_fn = function(player) return GlassicAPI.SetExclusiveToPlayer(player, "dummy") end }
+        {name = "raincoat_peggy", test_fn = GlassicAPI.SetExclusiveToPlayer("dummy") }
     },
 })
