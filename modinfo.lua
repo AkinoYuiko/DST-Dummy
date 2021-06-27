@@ -1,4 +1,4 @@
-version = "1.10.4"
+version = "1.10.5"
 -- basic info --
 name = locale == "zh" and "梦魇少女 达米" or "Dummy"
 author = locale == "zh" and "丁香女子学校" or "Civi, 中华田园人, Tony, kengyou_lei, LSSSS"
