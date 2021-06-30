@@ -9,21 +9,21 @@ PrefabFiles = {
 
 GlassicAPI.InitCharacterAssets("dummy", "FEMALE", Assets)
 GlassicAPI.InitMinimapAtlas("dummy_minimap", Assets)
-
 GlassicAPI.RegisterItemAtlas("dummy_inventoryimages", Assets)
 GlassicAPI.RegisterItemAtlas("hud/nightmaretab", Assets)
 
+local main_files = {
+	"only_dazui",
+	"prefabskin",
+	"recipes",
+	"sanity_reword",
+	"staff_action",
+	"tools_mutable",
+}
+for _,v in pairs(main_files) do modimport("main/"..v) end
+
 -- modules
-modimport("scripts/modules/dummy_recipes.lua")
-modimport("scripts/modules/bstaff_action.lua")
-modimport("scripts/modules/tools_mutable.lua")
-modimport("scripts/modules/sanity_reward.lua")
-
-modimport("scripts/modules/only_dazui.lua")
-
-
 modimport("strings/dummy_init.lua")
-modimport("scripts/modules/prefabskin.lua")
 modimport("strings/dummy_str"..(table.contains({"zh","chs","cht"}, GLOBAL.LanguageTranslator.defaultlang) and "_chs" or "")..".lua")
 
 
