@@ -16,7 +16,7 @@ local main_files = {
 	"only_dazui",
 	"prefabskin",
 	"recipes",
-	"sanity_reword",
+	"sanity_reward",
 	"staff_action",
 	"tools_mutable",
 }
