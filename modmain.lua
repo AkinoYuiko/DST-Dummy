@@ -18,7 +18,6 @@ local main_files = {
 	"recipes",
 	"sanity_reward",
 	"staff_action",
-	"tools_mutable",
 }
 for _,v in pairs(main_files) do modimport("main/"..v) end
 
