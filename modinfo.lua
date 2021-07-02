@@ -1,11 +1,11 @@
-version = "1.10.5"
+version = "1.11"
 -- basic info --
 name = locale == "zh" and "梦魇少女 达米" or "Dummy"
 author = locale == "zh" and "丁香女子学校" or "Civi, 中华田园人, Tony, kengyou_lei, LSSSS"
 description = locale == "zh" and "[版本: "..version..[[]
 
 更新内容: 
-- 修复一个小小的问题.
+- 达米的皮肤改用dyn格式
 
 < 饥饿/精神/生命: 150/200/150 >
 < 攻击倍率: 75% >
@@ -20,7 +20,7 @@ or
 "[Version: "..version..[[]
 
 Changelog: 
-- Fixed bug.
+- Set skins' anim to dyn format.
 
 < Hunger/Sanity/Health: 150/200/150 >
 < Damage: 75% >
